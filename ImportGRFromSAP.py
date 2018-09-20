@@ -8,8 +8,10 @@ import shutil
 import pyodbc
 import logging
 
+
 class ConnectDB:
     def __init__(self):
+        # Test Add Comment
         self._connection = pyodbc.connect('Driver={SQL Server};Server=192.168.2.52;\
                                         Database=WebVendor_V2;uid=sa;pwd=P@ssw0rd')
         self._cursor = self._connection.cursor()
@@ -148,7 +150,6 @@ def archiveFiletoBKPath(fileFullPath, des_path):
 
 
 def main(src_path, des_path):
-
     for root, dirs, files in os.walk(src_path):
         for file in files:
             if file.endswith(".txt"):
