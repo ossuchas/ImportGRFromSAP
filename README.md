@@ -1,2 +1,2 @@
 # ImportGRFromSAP
-ImportGRFromSAP.py
+ImportGRFromSAP
