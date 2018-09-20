@@ -11,7 +11,6 @@ import logging
 
 class ConnectDB:
     def __init__(self):
-        # Test Add Comment
         self._connection = pyodbc.connect('Driver={SQL Server};Server=192.168.2.52;\
                                         Database=WebVendor_V2;uid=sa;pwd=P@ssw0rd')
         self._cursor = self._connection.cursor()
